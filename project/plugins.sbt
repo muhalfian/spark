@@ -21,10 +21,10 @@ addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "0.3.0")
 // addSbtPlugin("com.alpinenow" % "junit_xml_listener" % "0.5.1")
 
 // need to make changes to uptake sbt 1.0 support in "com.eed3si9n" % "sbt-unidoc" % "0.4.1"
-addSbtPlugin("com.eed3si9n" % "sbt-unidoc" % "0.3.3")
+addSbtPlugin("com.eed3si9n" % "sbt-unidoc" % "0.4.1")
 
 // need to make changes to uptake sbt 1.0 support in "com.cavorite" % "sbt-avro-1-7" % "1.1.2"
-addSbtPlugin("com.cavorite" % "sbt-avro" % "0.3.2")
+addSbtPlugin("com.cavorite" % "sbt-avro-1-7" % "1.1.2")
 
 addSbtPlugin("io.spray" % "sbt-revolver" % "0.9.1")
 
@@ -42,4 +42,5 @@ addSbtPlugin("com.simplytyped" % "sbt-antlr4" % "0.7.12")
 // In the long run, we should try to merge our patch upstream and switch to an upstream version of
 // the plugin; this is tracked at SPARK-14401.
 
-addSbtPlugin("org.spark-project" % "sbt-pom-reader" % "1.0.0-spark")
+// addSbtPlugin("org.spark-project" % "sbt-pom-reader" % "1.0.0-spark")
+addSbtPlugin("com.typesafe.sbt" % "sbt-pom-reader" % "1.0.1")
