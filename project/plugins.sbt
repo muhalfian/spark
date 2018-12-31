@@ -24,7 +24,7 @@ addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "0.3.0")
 addSbtPlugin("com.eed3si9n" % "sbt-unidoc" % "0.4.1")
 
 // need to make changes to uptake sbt 1.0 support in "com.cavorite" % "sbt-avro-1-7" % "1.1.2"
-addSbtPlugin("com.cavorite" % "sbt-avro-1-7" % "1.1.2")
+addSbtPlugin("com.cavorite" % "sbt-avro-1-8" % "1.1.5")
 
 addSbtPlugin("io.spray" % "sbt-revolver" % "0.9.1")
 
@@ -33,7 +33,7 @@ libraryDependencies += "org.ow2.asm"  % "asm" % "7.0"
 libraryDependencies += "org.ow2.asm"  % "asm-commons" % "7.0"
 
 // sbt 1.0.0 support: https://github.com/ihji/sbt-antlr4/issues/14
-addSbtPlugin("com.simplytyped" % "sbt-antlr4" % "0.7.12")
+addSbtPlugin("com.simplytyped" % "sbt-antlr4" % "0.8.1")
 
 // Spark uses a custom fork of the sbt-pom-reader plugin which contains a patch to fix issues
 // related to test-jar dependencies (https://github.com/sbt/sbt-pom-reader/pull/14). The source for
@@ -43,4 +43,4 @@ addSbtPlugin("com.simplytyped" % "sbt-antlr4" % "0.7.12")
 // the plugin; this is tracked at SPARK-14401.
 
 // addSbtPlugin("org.spark-project" % "sbt-pom-reader" % "1.0.0-spark")
-addSbtPlugin("com.typesafe.sbt" % "sbt-pom-reader" % "1.0.1")
+addSbtPlugin("com.typesafe.sbt" % "sbt-pom-reader" % "2.1.0")
