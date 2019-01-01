@@ -27,7 +27,7 @@ import scala.collection.mutable.Stack
 import sbt._
 import sbt.Classpaths.publishTask
 import sbt.Keys._
-import sbtunidoc.GenJavadocPlugin._
+// import sbtunidoc.GenJavadocPlugin._
 import com.etsy.sbt.checkstyle.CheckstylePlugin.autoImport._
 import com.simplytyped.Antlr4Plugin._
 import com.typesafe.sbt.pom.{PomBuild, SbtPomKeys}
@@ -121,7 +121,8 @@ object SparkBuild extends PomBuild {
 
   lazy val sparkGenjavadocSettings: Seq[sbt.Def.Setting[_]] = Seq(
     libraryDependencies += compilerPlugin(
-      "com.typesafe.genjavadoc" %% "genjavadoc-plugin" % unidocGenjavadocVersion.value cross CrossVersion.full),
+      // "com.typesafe.genjavadoc" %% "genjavadoc-plugin" % unidocGenjavadocVersion.value cross CrossVersion.full),
+      "com.typesafe.genjavadoc" %% "genjavadoc-plugin" % "0.11"),
     scalacOptions ++= Seq(
       "-P:genjavadoc:out=" + (target.value / "java"),
       "-P:genjavadoc:strictVisibility=true" // hide package private types
